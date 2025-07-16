@@ -40,4 +40,4 @@ Here, simplicity is the gateway to exponential leverage.
 The future belongs to those who step outside the system — and then use a better one to rewrite the game.
 
 ---
-[Explore all articles →](http://localhost:1313/archives/)
+[Explore all Articles →](https://www.oocxx.com/archives/)
