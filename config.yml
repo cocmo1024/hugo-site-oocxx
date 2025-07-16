@@ -51,7 +51,6 @@ params:
 
   # ----- ✅ 全站 SEO 元信息 -----
   description: "Explore the architecture, automation, and monetization of scalable Hugo site networks. Learn how to build structured content systems, optimize SEO, and drive sustainable growth across multiple static sites."
-"
   keywords:
     - "Hugo site network"                  # Hugo 多站群
     - "modular site architecture"         # 模块化建站架构
