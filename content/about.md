@@ -1,16 +1,10 @@
 ---
-
 title: "About"
-
-url: "/about/"
-
 draft: false
-
 hideMeta: true
-
-no\_ads: true
-
+no_ads: true
 ---
+
 
 
 > **oocxx is a systemized tool for personal transformation — and the origin of a giant web reaching into the future.**
