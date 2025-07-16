@@ -1,8 +1,15 @@
 ---
+
 title: "About"
+
+url: "/about"
+
 draft: false
+
 hideMeta: true
+
 no_ads: true
+
 ---
 
 
