@@ -80,7 +80,7 @@ params:
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
   # ========================
   ads:
-    mode: image                             # 支持 demo / image / adsense / custom 四种广告模式
+    mode: adsense                             # 支持 demo / image / adsense / custom 四种广告模式
     adTop: true                             # ✅ 文章顶部广告
     adBottom: true                          # ✅ 文章底部广告
     adTags: true                            # ✅ 标签页广告
