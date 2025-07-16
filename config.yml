@@ -133,12 +133,12 @@ params:
   authors:
     Walter:
       avatar: "/images/authors/walter.webp"
-      bio: "Walter 是一名专注于 SEO 与 AI 工具的博主，热衷于分享可复用的建站系统。"
+      bio: "Focused on building scalable content systems through clear structure and long-term thinking. Passionate about turning complex ideas into simple, sustainable frameworks that connect technology, content, and cognition."
       links:
         - name: "Twitter"
-          url: "https://twitter.com/CQQ360"
+          url: "https://twitter.com"
         - name: "GitHub"
-          url: "https://github.com/cocmo1024"
+          url: "https://github.com"
 
 # ========================
 # ✅ 分页设置（替代旧版 paginate 字段）
