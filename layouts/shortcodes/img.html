@@ -1,0 +1,18 @@
+{{/* 获取参数 */}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $title := .Get "title" | default $alt -}}
+
+<figure style="text-align: center; margin: 1.5em 0;">
+  <img 
+    src="{{ $src | relURL }}" 
+    alt="{{ $alt }}" 
+    title="{{ $title }}" 
+    loading="lazy"
+    style="max-width: 100%; height: auto; border-radius: 8px;">
+  {{ if $alt }}
+    <figcaption style="font-size: 0.9em; color: #777; margin-top: 0.5em;">
+      {{ $alt }}
+    </figcaption>
+  {{ end }}
+</figure>
