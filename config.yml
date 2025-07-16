@@ -73,9 +73,9 @@ params:
   # ----- ✅ 首页欢迎区域（模块化） -----
   homeInfoParams:
     Content: |
-      **OOC** → *Out Of Convention*（打破常规）
+      **OOC** → *Out Of Convention*
       
-      **XX** → *Expression × Execution*（表达 × 执行）/ *未知 × 无限*
+      **XX** → *Expression × Execution* / *Unknown × Infinite* 
 
       Browse all content via **Archive** or **Tags** — built for scale and structure.
 
