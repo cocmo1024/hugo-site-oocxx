@@ -8,7 +8,7 @@ draft: false
 
 hideMeta: true
 
-no\_ads: true
+no_ads: true
 
 ---
 
