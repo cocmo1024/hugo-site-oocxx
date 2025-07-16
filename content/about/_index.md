@@ -2,7 +2,7 @@
 
 title: "About"
 
-url: "/about"
+url: "/about/"
 
 draft: false
 
