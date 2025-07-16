@@ -50,7 +50,7 @@ params:
   searchConsoleVerification: "zhjqlmYubtxPNlRecv2Ua2VByKYA6CSvyQunUXWvYKU"
 
   # ----- ✅ 全站 SEO 元信息 -----
-  description: "description: "Explore the architecture, automation, and monetization of scalable Hugo site networks. Learn how to build structured content systems, optimize SEO, and drive sustainable growth across multiple static sites."
+  description: "Explore the architecture, automation, and monetization of scalable Hugo site networks. Learn how to build structured content systems, optimize SEO, and drive sustainable growth across multiple static sites."
 "
   keywords:
     - "Hugo site network"                  # Hugo 多站群
@@ -77,6 +77,8 @@ params:
       **OOC** → *Out Of Convention*（打破常规）
       
       **XX** → *Expression × Execution*（表达 × 执行）/ *未知 × 无限*
+
+      Browse all content via **Archive** or **Tags** — built for scale and structure.
 
   # ========================
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
