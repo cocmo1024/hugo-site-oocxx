@@ -71,14 +71,12 @@ params:
   social:
     twitter: "CQQ360"                      # 用于 Twitter Card 的作者字段
 
-  # ----- ✅ 首页欢迎区域（模块化） -----
-  homeInfoParams:
-    Content: |
-     **OOC** → *Out Of Convention*  
-
-     **XX** → *Expression × Execution* / *Unknown × Infinite*  
-
-     Browse all content via **Archive** or **Tags** — built for scale and structure.
+# ----- ✅ 首页欢迎区域（模块化） -----
+homeInfoParams:
+  Content: |
+    **OOC** → *Out Of Convention*  
+    **XX** → *Expression × Execution* / *Unknown × Infinite*  
+    Browse all content via **Archive** or **Tags** — built for scale and structure.
 
   # ========================
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
