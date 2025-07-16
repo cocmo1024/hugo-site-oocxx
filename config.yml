@@ -50,18 +50,20 @@ params:
   searchConsoleVerification: "zhjqlmYubtxPNlRecv2Ua2VByKYA6CSvyQunUXWvYKU"
 
   # ----- ✅ 全站 SEO 元信息 -----
-  description: "Free AI tools, SEO-optimized blog templates, site network automation, and forex trading strategies — learn how to build traffic, monetize content, and scale with minimal effort."
+  description: "description: "Explore the architecture, automation, and monetization of scalable Hugo site networks. Learn how to build structured content systems, optimize SEO, and drive sustainable growth across multiple static sites."
+"
   keywords:
-    - "free AI tools"
-    - "SEO blog templates"
-    - "how to build website traffic"
-    - "Hugo site network"
-    - "blog monetization strategies"
-    - "automated blogging tools"
-    - "forex trading system"
-    - "minimalist business ideas"
-    - "static site SEO tips"
-    - "make money with blog"
+    - "Hugo site network"                  # Hugo 多站群
+    - "modular site architecture"         # 模块化建站架构
+    - "static site automation"            # 静态网站自动化
+    - "structured content strategy"       # 内容系统化运营
+    - "site monetization tactics"         # 站群变现策略
+    - "SEO ad optimization"               # SEO 广告优化
+    - "long-term content strategy"        # 长期主义内容战略
+    - "scalable multi-site system"        # 可扩展站群系统
+    - "technical site network monetization" # 技术型站群盈利路径
+    - "multi-site SEO strategy"           # 多站点 SEO 策略
+    - "build website with Hugo"           # Hugo 网站搭建
   images:
     - "/images/cover-default.webp"          # 默认社交分享图
     - /images/seo-default.webp     # 用于 SEO 模块中的 og:image、jsonld 等 fallback 图
@@ -72,9 +74,11 @@ params:
   # ----- ✅ 首页欢迎区域（模块化） -----
   homeInfoParams:
     Content: |
-      **OOC** → *Out Of Convention*（打破常规）
-      
-      **XX** → *Expression × Execution*（表达 × 执行）/ *未知 × 无限*
+**OOC** → *Out Of Convention*  
+
+**XX** → *Expression × Execution* / *Unknown × Infinite*  
+
+Browse all content via **Archive** or **Tags** — built for scale and structure.
 
   # ========================
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
