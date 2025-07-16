@@ -92,5 +92,5 @@ For any questions regarding this policy, you may contact us at:
 
 ---
 
-[Explore all articles →](http://localhost:1313/archives/)
+[Explore all Articles →](https://www.oocxx.com/archives/)
 
