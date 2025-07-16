@@ -1,0 +1,18 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+  <header class="entry-header">
+    <h1>{{ .Title | markdownify }}</h1>
+  </header>
+
+  <div class="entry-content">
+    {{ .Content | markdownify }}
+  </div>
+
+  {{/* ✅ 首页广告位插入：调用 hugo-ad-modules 提供的 partial */}}
+  {{ partial "ads/slot-ad-home-inline.html" . }}
+
+  <footer class="entry-footer">
+    {{ partial "social_icons.html" (dict "align" .AlignSocialIconsTo) }}
+  </footer>
+</article>
+{{- end }}

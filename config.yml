@@ -1,0 +1,207 @@
+# ========================
+# ✅ 站点基础配置
+# ========================
+baseURL: "http://www.oocxx.com/"             # 🚧 发布前请改为正式域名（需以 / 结尾）
+title: "OOCXX"                                # 站点标题
+languageCode: "en-us"
+defaultContentLanguage: "en"
+
+# ========================
+# ✅ Hugo Modules：本地模块引用（广告模块 + SEO 增强模块+EEAT加强模块）
+# ========================
+module:
+  imports:
+      - path: github.com/adityatelange/hugo-PaperMod     # ✅ 显式引入主题
+      
+      - path: github.com/cocmo1024/hugo-seo-enhancer
+        mounts:
+          - source: layouts
+            target: layouts
+          - source: static
+            target: static
+      - path: github.com/cocmo1024/hugo-ad-modules
+        mounts:
+          - source: layouts
+            target: layouts
+          - source: static
+            target: static
+          - source: shortcodes
+            target: layouts/shortcodes
+      - path: github.com/cocmo1024/hugo-eeat-info
+        mounts:
+          - source: layouts
+            target: layouts
+
+# ========================
+# ✅ 全站参数设置
+# ========================
+params:
+  publisher:
+    logo: "/images/logo-square.webp"   # ✅ 推荐使用 600x60 或 60x60 透明 PNG/WEBP
+  env: production                           # 当前构建环境，用于控制 robots.txt 输出等
+  defaultTheme: "auto"                      # 自动切换亮/暗模式
+  showShareButtons: true                    # 显示社交分享按钮
+  showReadingTime: true                     # 显示阅读时长
+  ShowToc: true                             # 启用文章内目录（可在文章 front matter 单独关闭）
+  author: "Walter"                          # 默认作者（用于结构化数据和文章作者信息）
+  favicon: "/images/favicon.ico"
+  ShowCodeCopyButtons: true    # 代码块一键复制
+  # ----- ✅ Google Search Console 验证字段 -----
+  searchConsoleVerification: "zhjqlmYubtxPNlRecv2Ua2VByKYA6CSvyQunUXWvYKU"
+
+  # ----- ✅ 全站 SEO 元信息 -----
+  description: "Free AI tools, SEO-optimized blog templates, site network automation, and forex trading strategies — learn how to build traffic, monetize content, and scale with minimal effort."
+  keywords:
+    - "free AI tools"
+    - "SEO blog templates"
+    - "how to build website traffic"
+    - "Hugo site network"
+    - "blog monetization strategies"
+    - "automated blogging tools"
+    - "forex trading system"
+    - "minimalist business ideas"
+    - "static site SEO tips"
+    - "make money with blog"
+  images:
+    - "/images/cover-default.webp"          # 默认社交分享图
+    - /images/seo-default.webp     # 用于 SEO 模块中的 og:image、jsonld 等 fallback 图
+  robots: "index, follow"                   # 默认允许搜索引擎索引
+  social:
+    twitter: "CQQ360"                      # 用于 Twitter Card 的作者字段
+
+  # ----- ✅ 首页欢迎区域（模块化） -----
+  homeInfoParams:
+    Content: |
+      **OOC** → *Out Of Convention*（打破常规）
+      
+      **XX** → *Expression × Execution*（表达 × 执行）/ *未知 × 无限*
+
+  # ========================
+  # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
+  # ========================
+  ads:
+    mode: image                             # 支持 demo / image / adsense / custom 四种广告模式
+    adTop: true                             # ✅ 文章顶部广告
+    adBottom: true                          # ✅ 文章底部广告
+    adTags: true                            # ✅ 标签页广告
+    adTagsTop: true                         # ✅ 标签页顶部广告
+    adListInterval: true                    # ✅ 文章列表页插入广告
+    adHomeInline: true                      # ✅ 首页中部广告（用于欢迎语下方）
+
+    # ----- ✅ 图片广告映射（image 模式专用） -----
+    imageMap:
+      ad-top:
+        img: "/ads/top.webp"
+        link: "https://example.com/top"
+        alt: "ad-top"
+      ad-bottom:
+        img: "/ads/bottom.webp"
+        link: "https://example.com/bottom"
+        alt: "ad-bottom"
+      ad-inline:
+        img: "/ads/inline.webp"
+        link: "https://example.com/inline"
+        alt: "ad-inline"
+      ad-home-inline:
+        img: "/ads/home.webp"
+        link: "https://example.com/home"
+        alt: "ad-home"
+      ad-tags:
+        img: "/ads/tags.webp"
+        link: "https://example.com/tags"
+        alt: "ad-tags"
+      ad-list-interval:
+        img: "/ads/list.webp"
+        link: "https://example.com/list"
+        alt: "ad-list-interval"
+
+    # ----- ✅ Google AdSense 配置（adsense 模式专用） -----
+    adsense:
+      client: "ca-pub-xxxxxxxxxxxxxxxx"
+      slots:
+        ad-top: "1111111111"
+        ad-bottom: "2222222222"
+        ad-inline: "3333333333"
+        ad-home-inline: "4444444444"
+        ad-tags: "5555555555"
+        ad-tags-top: "6666666666"
+        ad-list-interval: "7777777777"
+
+  # ========================
+  # ✅ 作者信息配置（由 hugo-eeat-info 模块使用）
+  # ========================
+  authors:
+    Walter:
+      avatar: "/images/authors/walter.webp"
+      bio: "Walter 是一名专注于 SEO 与 AI 工具的博主，热衷于分享可复用的建站系统。"
+      links:
+        - name: "Twitter"
+          url: "https://twitter.com/CQQ360"
+        - name: "GitHub"
+          url: "https://github.com/cocmo1024"
+
+# ========================
+# ✅ 分页设置（替代旧版 paginate 字段）
+# ========================
+pagination:
+  pagerSize: 10         # 每页文章数
+  path: "page"          # 分页路径（如 /page/2）
+
+# ========================
+# ✅ 顶部导航菜单栏配置
+# ========================
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: "Archive"
+      url: "/archives/"
+      weight: 2
+    - name: "Tags"
+      url: "/tags/"
+      weight: 3
+
+# ========================
+# ✅ 自动相关文章推荐配置
+# ========================
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: keywords
+      weight: 100
+    - name: tags
+      weight: 80
+    - name: categories
+      weight: 60
+    - name: date
+      weight: 10
+
+# ========================
+# ✅ 输出格式设置（含结构化数据和 robots.txt）
+# ========================
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - Sitemap
+    - robots
+
+# ========================
+# ✅ 网站地图设置（用于搜索引擎抓取）
+# ========================
+sitemap:
+  changefreq: weekly
+  priority: 0.7
+  filename: sitemap.xml
+
+# ========================
+# ✅ Markdown 渲染设置
+# ========================
+markup:
+  goldmark:
+    renderer:
+      unsafe: true       # 启用 HTML 代码渲染（如表格/iframe）
